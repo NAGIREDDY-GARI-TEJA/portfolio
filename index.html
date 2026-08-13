@@ -226,10 +226,18 @@
         letter-spacing: -0.04em;
         line-height: 0.95;
         margin-bottom: 1.5rem;
-        color: var(--accent);
+        color: rgba(255,255,255,0.95);
         text-transform: uppercase;
-        text-shadow: 0 0 40px rgba(45,212,191,0.25);
+        text-shadow: none;
     }
+
+    .hero-name .name-outline {
+        color: transparent;
+        -webkit-text-stroke: 2.5px rgba(255,255,255,0.75);
+    }
+
+    html.light .hero-name { color: #0a1714; }
+    html.light .hero-name .name-outline { -webkit-text-stroke: 2.5px rgba(10,23,20,0.6); }
 
     .hero-domains {
         display: flex;
@@ -856,7 +864,7 @@
                 <span class="blink-dot"></span>
                 AI Engineer — Chennai, India
             </p>
-            <h1 class="hero-name">Nagireddy<br>Gari Teja.</h1>
+            <h1 class="hero-name">Nagireddy Gari<br><span class="name-outline">Teja.</span></h1>
             <div class="hero-domains">
                 <span title="AI &amp; LLMs">🤖</span>
                 <span title="RAG &amp; LangChain">🔗</span>
